@@ -3,7 +3,11 @@ module Api
     class FrameworksController < ApplicationController
 
       def index
-        render json: Framework.all
+        render json: { frameworks: Framework.all }
+      end
+
+      def show
+        render json: { framework: Framework.find(params[:id]) }
       end
     end
   end
