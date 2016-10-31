@@ -5,6 +5,7 @@ gem 'pg'
 gem 'puma', '~> 3.0'
 gem 'rack-cors'
 gem 'rails_admin'
+gem 'octokit'
 
 group :development, :test do
   gem 'pry'
