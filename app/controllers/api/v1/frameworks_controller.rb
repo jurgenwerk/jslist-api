@@ -3,7 +3,7 @@ module Api
     class FrameworksController < ApplicationController
 
       def index
-        render json: { frameworks: Framework.all }
+        render json: { frameworks: Framework.order("cast(properties->>'jsIndex' as integer) desc").to_a }
       end
 
       def show
