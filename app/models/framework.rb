@@ -1,3 +1,3 @@
 class Framework < ApplicationRecord
-  # has_many :snapshots
+  has_many :snapshots
 end
